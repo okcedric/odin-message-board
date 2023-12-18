@@ -4,16 +4,35 @@ const router = express.Router();
 
 const messages = [
   {
-    text: "Hi there!",
-    user: "Amando",
-    added: new Date(),
+    text: "Salut tout le monde !",
+    user: "Sophie",
+    added: new Date("2023-12-17T12:00:00").toLocaleString(
+      DateTime.DATETIME_FULL
+    ),
   },
   {
-    text: "Hello World!",
-    user: "Charles",
-    added: new Date(),
+    text: "Quelqu'un connait un bon resto à Toulouse ?",
+    user: "Maxime",
+    added: new Date("2023-12-16T15:30:00").toLocaleString(
+      DateTime.DATETIME_FULL
+    ),
+  },
+  {
+    text: "Vive le design minimaliste !",
+    user: "Julie",
+    added: new Date("2023-12-15T09:45:00").toLocaleString(
+      DateTime.DATETIME_FULL
+    ),
+  },
+  {
+    text: "Elementor c'est top pour WordPress.",
+    user: "Lucas",
+    added: new Date("2023-12-14T20:20:00").toLocaleString(
+      DateTime.DATETIME_FULL
+    ),
   },
 ];
+
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
