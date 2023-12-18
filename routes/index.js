@@ -48,7 +48,7 @@ router.post("/new", function (req, res, next) {
     user: req.body.user,
     added: now,
   };
-messages.push(post);
+messages.unshift(post);
   res.redirect("/");
 });
 module.exports = router;
