@@ -6,3 +6,15 @@ body {
 a {
   color: #00B7FF;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.272rem;
+  gap: 1rem;
+  max-width: 42rem;
+}
+button {
+  font-size: 1.272rem;
+  cursor: pointer;
+}

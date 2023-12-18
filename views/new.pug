@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1=title
+    form( method="POST" action="/new")
+        input#user(name="user" type="text" placeholder="Pseudo")
+        textarea#text(name="text", cols="30", rows="10") 
+        input#submit(type="submit")
