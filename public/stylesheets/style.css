@@ -1,6 +1,20 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,500&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 2rem;
+  font: 1rem "Satoshi", 'Inter', Helvetica, Arial, sans-serif;
+  background-color: blue;
+  font-weight: 500;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -8,13 +22,71 @@ a {
 }
 
 form{
+  width: 42rem;
+  border-radius: .5rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.272rem;
-  gap: 1rem;
-  max-width: 42rem;
+  padding: 1rem 1rem;
+  background-color: whitesmoke;
+  gap: 2rem;
 }
-button {
+input, textarea{
+  font-size: 1.272rem;
+  padding: 1rem;
+  background-color: transparent;
+  font-family: "Satoshi", 'Inter', Helvetica, Arial, sans-serif;;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 2rem 0;
+}
+h1{
+  font-size: 7vh;
+  color:whitesmoke
+}
+button,input[type=button], input[type=submit], input[type=reset]{
   font-size: 1.272rem;
   cursor: pointer;
+  background-color: #131313;
+  color: whitesmoke;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
 }
+button:hover,input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
+  background-color: whitesmoke;
+  color:#131313 ;
+}
+
+
+.messages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.card {
+  width: 42rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  background-color: whitesmoke;
+}
+
+.text{
+  font-style: italic;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  
+}
+.user{
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+

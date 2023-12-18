@@ -1,12 +1,13 @@
 extends layout
 
 block content
-  h1= title
+  header 
+    h1= title
+    a(href="/new") 
+      button Écris un message !
   ul.messages
     each message in messages
       li.card 
         p.text= message.text
         p.user= message.user
         p.added= message.added
-  a(href="/new") 
-    button Écris un message !
