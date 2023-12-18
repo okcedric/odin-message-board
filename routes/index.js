@@ -42,11 +42,11 @@ router.get("/new", function (req, res, next) {
   res.render("new", { title: "Add a public message" });
 });
 router.post("/new", function (req, res, next) {
-  const now = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+  const now = new Date().toLocaleString(DateTime.DATETIME_FULL);
   const post = {
     text: req.body.text,
     user: req.body.user,
-    added: DateTime.now().toLocaleString(DateTime.DATETIME_FULL),
+    added: now,
   };
 messages.push(post);
   res.redirect("/");
